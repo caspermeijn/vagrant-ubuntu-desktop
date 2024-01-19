@@ -25,7 +25,8 @@ packer build .
 ## Test built box
 
 ```bash
-vagrant init output-ubuntu/package.box
+vagrant box add --force output-ubuntu/package.box --name local/ubuntu-desktop-22.04
+vagrant init local/ubuntu-desktop-22.04
 vagrant up --provider virtualbox
 ```
 

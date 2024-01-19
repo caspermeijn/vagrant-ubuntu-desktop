@@ -31,7 +31,8 @@ build {
       "echo yes | tee /home/vagrant/.config/gnome-initial-setup-done",
       "gsettings set org.gnome.desktop.screensaver lock-delay 3600",
       "gsettings set org.gnome.desktop.screensaver lock-enabled false",
-      "gsettings set org.gnome.desktop.screensaver idle-activation-enabled false"
+      "gsettings set org.gnome.desktop.screensaver idle-activation-enabled false",
+      "gsettings set org.gnome.desktop.session idle-delay 0"
     ]
   }
 }
