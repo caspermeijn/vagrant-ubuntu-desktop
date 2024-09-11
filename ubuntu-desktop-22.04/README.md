@@ -32,3 +32,10 @@ vagrant up --provider virtualbox
 ## Upload box
 
 Upload `output-ubuntu/package.box` to https://app.vagrantup.com/caspermeijn/boxes/ubuntu-desktop-22.04
+
+## Cleanup 
+
+```bash
+vagrant destroy
+rm -rf .vagrant/ output-ubuntu/ Vagrantfile 
+```
