@@ -17,6 +17,7 @@ sudo /sbin/vboxconfig
 packer init .
 packer fmt .
 packer validate .
+vagrant box update --box bento/ubuntu-24.04 --provider virtualbox
 packer build .
 ```
 
