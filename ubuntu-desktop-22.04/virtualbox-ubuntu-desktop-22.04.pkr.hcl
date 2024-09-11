@@ -29,6 +29,7 @@ build {
       "printf '[daemon]\nAutomaticLoginEnable=True\nAutomaticLogin=vagrant\n' | sudo tee /etc/gdm3/custom.conf",
       "mkdir -p /home/vagrant/.config",
       "echo yes | tee /home/vagrant/.config/gnome-initial-setup-done",
+      "sudo sed -i 's/lts$/never/g' /etc/update-manager/release-upgrades",
       "gsettings set org.gnome.desktop.screensaver lock-delay 3600",
       "gsettings set org.gnome.desktop.screensaver lock-enabled false",
       "gsettings set org.gnome.desktop.screensaver idle-activation-enabled false",
