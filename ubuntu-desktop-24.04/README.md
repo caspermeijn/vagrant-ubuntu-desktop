@@ -11,6 +11,14 @@ sudo dnf install packer vagrant VirtualBox-7.0 kernel-headers kernel-devel dkms
 sudo /sbin/vboxconfig
 ```
 
+## Disable KVM
+
+I got error message `VERR_SVM_IN_USE` and had to unload `kvm` module:
+
+```bash
+sudo rmmod kvm_amd kvm
+```
+
 ## Build box
 
 ```bash
