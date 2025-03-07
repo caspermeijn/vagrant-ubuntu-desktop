@@ -33,7 +33,8 @@ build {
       "gsettings set org.gnome.desktop.screensaver lock-delay 3600",
       "gsettings set org.gnome.desktop.screensaver lock-enabled false",
       "gsettings set org.gnome.desktop.screensaver idle-activation-enabled false",
-      "gsettings set org.gnome.desktop.session idle-delay 0"
+      "gsettings set org.gnome.desktop.session idle-delay 0",
+      "sudo systemctl disable systemd-networkd.service"
     ]
   }
 }
